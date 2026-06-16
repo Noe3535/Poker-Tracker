@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Poker Nights</title>
+<style>
+body{margin:0;background:#0f172a;color:#fff;font-family:Arial}
+header{background:linear-gradient(90deg,#166534,#22c55e);padding:18px;text-align:center}
+header h1{margin:0}
+.ticker{background:#111827;overflow:hidden;white-space:nowrap;padding:10px 0}
+.ticker div{display:inline-block;padding-left:100%;animation:move 25s linear infinite}
+@keyframes move{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px}
+.card{background:#1e293b;padding:12px;border-radius:14px;text-align:center}
+.big{font-size:20px;font-weight:bold}
+nav{display:flex;background:#111827}
+nav button{flex:1;padding:12px;border:0;background:#334155;color:white}
+.tab{padding:15px}
+</style>
+</head>
+<body>
+<header>
+<h1>🎲 Poker Nights</h1>
+</header>
+
+<div class="ticker">
+<div>
+🏆 Biggest Winner Ever: Noé (+87.50 CHF) • 😭 Biggest Loser Ever: Luca (-72.50 CHF) • 👑 Gesamtleader: Noé (+342.00 CHF) • 📉 Gesamtloser: Simon (-289.50 CHF) • 🔥 Meiste Siege: Marco (12) • 🎲 28 Poker Nights gespielt
+</div>
+</div>
+
+<div class="grid">
+<div class="card">
+<div>🏆 Biggest Winner</div>
+<div class="big">Noé</div>
+<div>+87.50 CHF</div>
+</div>
+
+<div class="card">
+<div>😭 Biggest Loser</div>
+<div class="big">Luca</div>
+<div>-72.50 CHF</div>
+</div>
+
+<div class="card">
+<div>👑 Gesamtleader</div>
+<div class="big">Noé</div>
+<div>+342.00 CHF</div>
+</div>
+
+<div class="card">
+<div>📉 Gesamtloser</div>
+<div class="big">Simon</div>
+<div>-289.50 CHF</div>
+</div>
+</div>
+
+<nav>
+<button>Neue Nacht</button>
+<button>Statistik</button>
+<button>Verlauf</button>
+<button>Spieler</button>
+</nav>
+
+<div class="tab">
+<h2>V8 Design-Konzept</h2>
+<p>Dateiname ist bereits <b>index.html</b> und kann direkt in GitHub Pages hochgeladen werden.</p>
+<p>Die Rekorde oben sind aktuell Demo-Werte. In einer vollständigen V8 würden sie automatisch aus den gespeicherten Daten berechnet.</p>
+</div>
+</body>
+</html>
